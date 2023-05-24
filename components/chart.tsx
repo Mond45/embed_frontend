@@ -64,6 +64,6 @@ const Chart = ({ item, header, raw }: ChartProps) => {
       ],
     }
   }, [raw, item, labels])
-  return <Line options={options} data={data} />
+  return <Line options={options} data={data as any} />
 }
 export { Chart }
